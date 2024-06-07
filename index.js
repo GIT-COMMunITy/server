@@ -2,6 +2,7 @@
 import express from "express"; // ES6
 import boardRoute from "./src/routes/boardRoute.js";
 import guestbookRoute from "./src/routes/guestbookRoute.js";
+import userRoute from "./src/routes/userRoute.js";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import cors from "cors";
@@ -30,9 +31,7 @@ app.get("/guestbook", (req, res) => {
   });
 });
 
-app.get("/", function (req, res) {
-  res.send("Hello World");
-});
+app.use("/user", userRoute);
 
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);

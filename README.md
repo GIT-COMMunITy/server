@@ -1,6 +1,8 @@
 ```
-### 파일 구조🌟
 fullstackserver2
+├─ .github
+│  └─ workflows
+│     └─ ci.yml
 ├─ .gitignore
 ├─ index.js
 ├─ package-lock.json
@@ -8,7 +10,8 @@ fullstackserver2
 ├─ src
 │  ├─ controllers
 │  │  ├─ boardController.js
-│  │  └─ guestbookController.js
+│  │  ├─ guestbookController.js
+│  │  └─ userController.js
 │  ├─ dtos
 │  │  └─ postDto.js
 │  ├─ models
@@ -17,7 +20,8 @@ fullstackserver2
 │  │  └─ db.js
 │  ├─ routes
 │  │  ├─ boardRoute.js
-│  │  └─ guestbookRoute.js
+│  │  ├─ guestbookRoute.js
+│  │  └─ userRoute.js
 │  └─ services
 │     ├─ boardService.js
 │     └─ guestbookService.js
